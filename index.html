@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="card p-4" style="width: 28rem;">
+            <div class="text-center mb-3">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="75">
+                <h2 class="mt-3">Sign in</h2>
+                <p>Use your Google Account</p>
+            </div>
+            <form id="loginForm">
+                <!-- Email input section -->
+                <div id="emailSection" class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email or phone" required>
+                    <div class="d-flex justify-content-between mt-2">
+                        <a href="forgot_email.html">Forgot email?</a>
+                    </div>
+                </div>
+                <!-- Password input section -->
+                <div id="passwordSection" class="mb-3" style="display: none;">
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    <div class="d-flex justify-content-between mt-2">
+                        <button type="button" class="btn btn-link" id="backButton">Back</button>
+                    </div>
+                </div>
+                <!-- Next button -->
+                <button type="button" class="btn btn-primary w-100 mb-3" id="nextButton">Next</button>
+                <!-- Login button -->
+                <button type="submit" class="btn btn-primary w-100 mb-3" id="loginButton" style="display: none;">Login</button>
+            </form>
+            <div class="text-center">
+                <a href="signup.html">Create account</a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
